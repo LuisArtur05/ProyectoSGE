@@ -49,6 +49,7 @@
                 <input type="password" class="form-control" name="pass" />
                 <a href="">Forgot Password</a>
                 <input type="submit" class="form-control btn-color mt-3 w-100" value="Enviar" name="Login" />
+                <input type="submit" class="form-control btn-color mt-3 w-100" value="Create Account" name="Account" />
                 
                 
             </div>
