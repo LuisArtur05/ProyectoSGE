@@ -52,9 +52,9 @@
                     <i class="bi bi-person-circle" style="font-size: 5rem;"></i>
                 </div>
                 <label class="form-label mt-3 fw-semibold">Email address</label>
-                <input class="form-control" placeholder="name@example.com" name="email" />
+                <input type ="text"class="form-control" placeholder="name@example.com" name="email" />
                 <label class="form-label mt-3 fw-semibold">Username</label>
-                <input class="form-control" name="user"  />
+                <input tyç="text" class="form-control" name="user"  />
                 <label class="form-label mt-3 fw-semibold">Password</label>
                 <input type="password" class="form-control" name="pass" />
                 <a href="">Forgot Password</a>
