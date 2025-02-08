@@ -48,8 +48,8 @@
                 <label class="form-label mt-3 fw-semibold">Password</label>
                 <input type="password" class="form-control" name="pass" />
                 <a href="">Forgot Password</a>
-                <input type="submit" class="form-control btn-color mt-3 w-100" value="Enviar" id="Login" />
-                <input type="submit" class="form-control btn-color mt-3 w-100" value="Create Account" id="CA" />
+                <input type="submit" class="form-control btn-color mt-3 w-100" value="Enviar" name="Login" />
+                
                 
             </div>
         </form>
