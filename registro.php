@@ -68,6 +68,34 @@
             </div>
         </form>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function (event) {
+            let emailAntiguo = String(document.querySelector('input[name="emailAntiguo"]').value.trim());
+            let emailNuevo = String(document.querySelector('input[name="emailNuevo"]').value.trim());
+            let userAntiguo = String(document.querySelector('input[name="userAntiguo"]').value.trim());
+            let userNuevo = String(document.querySelector('input[name="userNuevo"]').value.trim());
+            let passAntiguo = String(document.querySelector('input[name="passAntiguo"]').value.trim());
+            let passNuevo = String(document.querySelector('input[name="passNuevo"]').value.trim());
+
+        if (!emailAntiguo || !emailNuevo || !userAntiguo || !userNuevo || !passAntiguo || !passNuevo) {
+            alert("Por favor, complete todos los campos antes de enviar.");
+            event.preventDefault(); // Detiene el envío del formulario
+        } else {
+            // Asignar los valores convertidos al formulario antes de enviarlo
+            document.querySelector('input[name="emailAntiguo"]').value = emailAntiguo;
+            document.querySelector('input[name="emailNuevo"]').value = emailNuevo;
+            document.querySelector('input[name="userAntiguo"]').value = userAntiguo;
+            document.querySelector('input[name="userNuevo"]').value = userNuevo;
+            document.querySelector('input[name="passAntiguo"]').value = passAntiguo;
+            document.querySelector('input[name="passNuevo"]').value = passNuevo;
+        }
+    });
+});
+
+    </script>
 
 </body>
 
