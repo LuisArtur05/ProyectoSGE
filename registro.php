@@ -44,7 +44,7 @@
     
 
     <div class="container">
-        <form action="login.php" method="post" >
+        <form action="register.php" method="post" >
             <div class="box p-5 rounded">
                 <h2 class="text-center">Update Account</h2>
                 <div class="text-center">

@@ -65,6 +65,29 @@
             </div>
         </form>
     </div>
+    <script>
+       document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function (event) {
+            let email = String(document.querySelector('input[name="email"]').value.trim());
+            let username = String(document.querySelector('input[name="user"]').value.trim());
+            let password = String(document.querySelector('input[name="pass"]').value.trim());
+
+            if (!email || !username || !password) {
+                alert("Por favor, complete todos los campos antes de enviar.");
+                event.preventDefault(); // Detiene el envío del formulario
+            } else {
+                // Asignar los valores convertidos al formulario antes de enviarlo
+                document.querySelector('input[name="email"]').value = email;
+                document.querySelector('input[name="user"]').value = username;
+                document.querySelector('input[name="pass"]').value = password;
+            }
+          });
+        });
+
+
+    </script>
 
 </body>
 
